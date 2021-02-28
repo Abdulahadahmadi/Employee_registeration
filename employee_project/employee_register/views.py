@@ -3,8 +3,8 @@ from .forms import EmployeeForm
 from .models import Employee 
 
 def employee_list(request):
-    context = {'employee_list':Employee.objects.all()}
-    return render(request, "employee_register/employee_list.html", context)
+    contexts = {'employee_list':Employee.objects.all()}
+    return render(request, "employee_register/employee_list.html", contexts)
 
     
 def employee_form(request,id=0):
